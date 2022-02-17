@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="mx-5">
+    <h1 class="text-5xl font-bold text-center my-5 text-teal-500">Money Calculator</h1>
+       <section class="lg:grid lg:grid-cols-2 gap-5 md:block sm:block">
+            <div>
+                <img src="images/1.jpg">
+            </div>
+
+        <div class="bg-slate-200 text-center">
+            <h2 class="text-xl my-4 font-semibold">Income</h2>
+                <label>Income: </label>
+                    <input class="bg-slate-400" type="number" id="income"><br>
+            
+            <h2 class="text-xl my-4 font-semibold">Expenses</h2>
+                 <label>Rent: </label>
+                    <input class="bg-slate-400 mb-2" type="number" id="rent"> <br>
+                <label>Food: </label>
+                    <input class="bg-slate-400 mb-2" type="number" id="food"> <br>
+                <label>Clothes: </label>
+                    <input class="bg-slate-400 mb-2" type="number" id="clothes"> <br>
+                <button class="bg-blue-600 px-5 py-2 text-semibold text-white rounded mt-4" onclick="myFunction()">Calculate</button>
+                    <p id="totalExpenses"></p>
+                    <p id="totalBalance"></p>
+
+                <label>Save: </label>
+                    <input class="bg-slate-400 mb-2" type="number" id="percent"> 
+                    <span> % </span> 
+                <button class="bg-blue-600 px-5 py-2 text-semibold text-white rounded mt-4" onclick="percentCal()"> save</button>
+                    <p id="saving"></p>
+                    <p id="remaining"></p>
+        </section>
+    <script src="samik.js"></script>
+</body>
+</html>
