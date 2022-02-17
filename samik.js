@@ -2,15 +2,6 @@ function myFunction(){
     var rentExpense = Number(rent.value);
     var foodExpense = Number(food.value);
     var clothesExpense = Number(clothes.value);
-
-    if (rentExpense < 0 || foodExpense <0 || clothesExpense <0)
-    {
-        console.log("error");
-        break;
-    }
-    else{
-        continue;
-    }
     
     var sumIncome = Number(income.value);
     var sumExpense = rentExpense + foodExpense + clothesExpense;
