@@ -2,7 +2,6 @@ function myCalculator(){
     var rentExpense = Number(rent.value);
     var foodExpense = Number(food.value);
     var clothesExpense = Number(clothes.value);
-    
     var sumIncome = Number(income.value);
     var balance = Number(sumIncome-sumExpense);
 
